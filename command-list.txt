@@ -5,3 +5,6 @@
 
 php artisan make:model Order -m
 php artisan make:controller Api/OrderController --api
+
+composer require irazasyed/telegram-bot-sdk
+php artisan vendor:publish --provider="Telegram\Bot\Laravel\TelegramServiceProvider"
